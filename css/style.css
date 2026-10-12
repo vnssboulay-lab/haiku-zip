@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 28px 18px;
+    background: #eef1ed;
+    color: #24352e;
+    font-family: "Century Gothic", "Trebuchet MS", sans-serif;
+}
+
+.page-container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    background: #fffefa;
+    border: 1px solid #d8ded7;
+    box-shadow: 0 10px 30px rgba(34, 55, 43, 0.08);
+}
+
+.top-band {
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dfe7df;
+    border-bottom: 1px solid #c9d4c9;
+}
+
+.site-mark {
+    color: #476653;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.site-mark span {
+    padding: 0 8px;
+    color: #a77c46;
+}
+
+.title-section {
+    text-align: center;
+    padding: 30px 20px 10px;
+}
+
+.eyebrow,
+.section-label {
+    margin: 0 0 10px;
+    color: #7b8d7d;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.title-section h1 {
+    margin: 0;
+    color: #263d30;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.author {
+    margin: 8px 0 0;
+    color: #66776a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.title-rule {
+    width: 56px;
+    height: 2px;
+    margin: 22px auto 0;
+    background: #b58c58;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    padding: 28px 34px 58px;
+}
+
+.image-box {
+    width: 400px;
+    margin: 0;
+    flex: 0 1 400px;
+}
+
+.image-box img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid #d8ded7;
+}
+
+.image-box figcaption {
+    margin-top: 12px;
+    color: #7b887e;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+.haiku-box {
+    width: 400px;
+    min-height: 260px;
+    flex: 0 1 400px;
+    padding: 30px 30px 24px;
+    background: #f0f2ed;
+    border: 1px solid #d8ded7;
+}
+
+.haiku-box h2 {
+    margin: 0 0 28px;
+    color: #304b39;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: normal;
+    line-height: 1.25;
+}
+
+.poem p {
+    margin: 0 0 10px;
+    color: #35453a;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.45;
+}
+
+.poem-mark {
+    margin-top: 24px;
+    color: #b58c58;
+    font-size: 16px;
+}
+
+.bottom-band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    min-height: 58px;
+    padding: 14px 28px;
+    background: #dfe7df;
+    border-top: 1px solid #c9d4c9;
+    color: #526b58;
+    font-size: 12px;
+}
+
+.footer-author {
+    text-align: right;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 12px;
+    }
+
+    .main-content {
+        flex-direction: column;
+        gap: 28px;
+        padding: 24px 18px 36px;
+    }
+
+    .image-box,
+    .haiku-box {
+        width: 100%;
+        max-width: 420px;
+        flex-basis: auto;
+    }
+
+    .haiku-box {
+        min-height: 0;
+        padding: 25px;
+    }
+
+    .bottom-band {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-author {
+        text-align: center;
+    }
+}
